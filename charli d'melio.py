@@ -37,7 +37,7 @@ def agregar_al_carrito():
 
     print("------------------------")
     num_producto = int(input("Ingresa el número del producto a agregar: "))
-    cant_producto = int(input("Cuantos articulos quieres de este producto: "))
+    cant_reparaciones = int(input("Cuantas reparaciones quieres de este tipo: "))
     carrito_producto.append(num_producto - 1)
     carrito_cantidad.append(cant_producto)
 
@@ -68,8 +68,8 @@ while opcion != 6:
         agregar_al_carrito()
     elif opcion == 4:
         tamano = len(carrito_producto)
-        print("----  Carrito ----------")
-        print("No.     Nombre      Precio       Cantidad")
+        print("---------- estimado -----------")
+        print("No.     Tipo de reparacion      Precio($mx)       No. Reparaciones")
         for i in range(tamano):
             print(i+1,". ", lista_reparaciones[ carrito_producto[i] ],"    ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
         print("------------------------")
