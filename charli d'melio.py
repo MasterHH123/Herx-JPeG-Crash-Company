@@ -1,4 +1,5 @@
-inicio=input("Ingresa tu modelo de automovil, marca de vehículo y tu nombre completo (separado por comas), Por favor: ")
+nombre=input("Ingresa tu nombre completo: ")
+inicio=input("Ingresa tu modelo de automovil, marca de vehículo y año de este (separado por comas), Por favor: ")
 print(inicio)
 print("Rellena lo que se te pide para darte un estimado sobre el costo de reparación")
 def menu():
@@ -33,17 +34,17 @@ def mostrar_carrito (l_productos,l_precio, c_cantidad, c_producto):
 
 def agregar_al_carrito():
 
-    mostrar_productos(lista_productos, lista_precio)
+    mostrar_productos(lista_reparaciones, lista_precio)
 
     print("------------------------")
-    num_producto = int(input("Ingresa el número del prodcto a agregar: "))
+    num_producto = int(input("Ingresa el número del producto a agregar: "))
     cant_producto = int(input("Cuantos articulos quieres de este producto: "))
     carrito_producto.append(num_producto - 1)
     carrito_cantidad.append(cant_producto)
 
 
 # Lista de los productos
-lista_productos = ["papas", "refrescos", "tortillas", "jamon", "mazapan"]
+lista_reparaciones = ["raspon", "abolladura_leve", "abolladura_grave", "cambio_total_de_pieza", "mazapan"]
 # Lista de los precios
 lista_precio =    [12,      10.5,         20,         40,  5,]
 # Lista del carrito con los productos
@@ -61,9 +62,9 @@ while opcion != 6:
     opcion = menu()
 
     if opcion == 1:
-        mostrar_productos(lista_productos, lista_precio)
+        mostrar_productos(lista_reparaciones, lista_precio)
     elif opcion == 2:
-        mostrar_carrito(lista_productos, lista_precio, carrito_cantidad, carrito_producto)
+        mostrar_carrito(lista_reparaciones, lista_precio, carrito_cantidad, carrito_producto)
     elif opcion == 3:
         agregar_al_carrito()
     elif opcion == 4:
@@ -71,7 +72,7 @@ while opcion != 6:
         print("----  Carrito ----------")
         print("No.     Nombre      Precio       Cantidad")
         for i in range(tamano):
-            print(i+1,". ", lista_productos[ carrito_producto[i] ],"    ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
+            print(i+1,". ", lista_reparaciones[ carrito_producto[i] ],"    ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
         print("------------------------")
         # Leemos el numero del carrito a borrar
         num_producto = int(input("Ingresa el número del producto a borrar: "))
