@@ -1,9 +1,10 @@
 def startupmenu():
-    print("Rellena lo que se te pide para darte un estimado sobre el cotso de reparación")
+    print("Rellena lo que se te pide para darte un estimado sobre el costo de reparacion")
     input("")
-opcion = int(input("Opción: "))
+opcion = int(input("Opcion: "))
 print("")
     return opcion
+
 #Se inicia el programa
 #Se le pide al usuario que ingrese su modelo de auto y nombre completos
 inicio=input("Ingresa tu modelo de automovil, marca de vehiculo y su nombre completo (separado por comas), Por favor: ")
