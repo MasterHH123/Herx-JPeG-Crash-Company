@@ -12,16 +12,3 @@ print(inicio)
 #Se le pide al usuario que introduzca cuantas reparaciones necesita o si su tipo de reparacion no aparece en la lista seleccione "otra"
 #Se le pregunta al usuario si necesita alguna otra reparación
 #Sino se imprime el cobro total por las reparaciones requeridas
-def menu():
-    print("")
-    print("-------------------------------------")
-    print("1. Mostrar productos")
-    print("2. Mostrar el carrito")
-    print("3. Agregar al carrito")
-    print("4. Borrar un producto del carrito")
-    print("5. Cantidad a pagar")
-    print("6. Salir")
-    print("")
-    opcion = int(input("Opción: "))
-    print("")
-    return opcion
