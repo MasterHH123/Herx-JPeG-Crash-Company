@@ -6,7 +6,7 @@ print("Rellena lo que se te pide para darte un estimado sobre el costo de repara
 
 opcion = int(input("Opción: "))
 
-
+print(inicio)
 
 #Se imprime una lista de tipos de reparaciones que se ofrecen
 #Se le pide al usuario que introduzca cuantas reparaciones necesita o si su tipo de reparacion no aparece en la lista seleccione "otra"
