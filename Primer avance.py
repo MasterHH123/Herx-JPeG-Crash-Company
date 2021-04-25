@@ -39,7 +39,7 @@ def agregar_al_carrito():
     num_producto = int(input("Ingresa el número del producto a agregar: "))
     cant_reparaciones = int(input("Cuantas reparaciones quieres de este tipo: "))
     carrito_producto.append(num_producto - 1)
-    carrito_cantidad.append(cant_producto)
+    carrito_cantidad.append(cant_reparaciones)
 
 
 # Lista de los productos
