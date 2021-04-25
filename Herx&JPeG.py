@@ -12,4 +12,3 @@ opcion = int(input("Opción: "))
 #Se le pide al usuario que introduzca cuantas reparaciones necesita o si su tipo de reparacion no aparece en la lista seleccione "otra"
 #Se le pregunta al usuario si necesita alguna otra reparación
 #Sino se imprime el cobro total por las reparaciones requeridas
-print(inicio)
