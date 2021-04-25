@@ -1,6 +1,6 @@
 #Se inicia el programa
 #Se le pide al usuario que ingrese su modelo de auto y nombre completos
-inicio=input("Ingresa tu modelo de automovil, marca de vehículo y su nombre completo (separado por comas), Por favor: ")
+inicio=input("Ingresa tu modelo de automovil, marca de vehículo y tu nombre completo (separado por comas), Por favor: ")
 
 print("Rellena lo que se te pide para darte un estimado sobre el costo de reparación")
 
