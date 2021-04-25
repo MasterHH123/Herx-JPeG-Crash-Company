@@ -5,7 +5,7 @@
 print("Rellena lo que se te pide para darte un estimado sobre el costo de reparación")
 inicio=input("Ingresa tu modelo de automovil, marca de vehículo y su nombre completo (separado por comas), Por favor: ")
 opcion = int(input("Opción: "))
-print("")
+print(inicio)
 
 
 #Se imprime una lista de tipos de reparaciones que se ofrecen
