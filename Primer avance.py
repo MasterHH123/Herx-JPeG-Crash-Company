@@ -1,5 +1,6 @@
 nombre=input("Ingresa tu nombre completo: ")
 inicio=input("Ingresa tu modelo de automovil, marca de vehículo y año de este (separado por comas), Por favor: ")
+problema=input("Que problema tiene su automovil?")
 print(inicio)
 print("Rellena lo siguiente para darte un estimado sobre el costo de tu reparación")
 def menu():
@@ -61,12 +62,12 @@ while opcion != 5:
         for i in range(listp1):
             print(i+1,". ", lista_de_reparaciones[ carrito_reparaciones[i] ],"    ",lista_de_precio[ carrito_reparaciones[i] ], "   ", cantidad_reparaciones[i])
         print("------------------------")
-        # Leemos el numero del carrito a borrar
+        #Se ve que reparacion se quiere cancelar
         num_producto = int(input("Ingresa la opcion de la reparacion que quieres cancelar: "))
-        # Sustituir por un 0 el valor del articulo a borrar
+        #Sustituir por un 0 el valor de la reparacion a cancelar
         carrito_reparaciones[ num_producto-1 ] = -1
         cantidad_reparaciones[ num_producto-1 ] = -1
-        # Removerlo de la lista del carrito
+        #Removerlo de la lista de reparaciones
         carrito_reparaciones.remove(-1)
         cantidad_reparaciones.remove(-1)
 
