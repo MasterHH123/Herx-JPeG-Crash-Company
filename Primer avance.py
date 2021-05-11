@@ -1,8 +1,22 @@
+#Usuario escribe sus datos
 nombre=input("Ingresa tu nombre completo: ")
 inicio=input("Ingresa tu modelo de automovil, marca de vehículo y año de este (separado por comas), Por favor: ")
-problema=input("Que problema tiene su automovil?")
-print(inicio)
-print("Rellena lo siguiente para darte un estimado sobre el costo de tu reparación")
+#se imprimen recomendaciones
+print("Te ofrecemos esta recomendaciones si no sabes donde empezar")
+print("")
+print("1.Daño frontal(Incluye el parachoques, cofre y las dos puertas frontales)")
+print("Te recomendamos un cambio de pieza, un trabajo de pintura y si es necesario un cambio de focos")
+print("")
+print("2.Daño al lado izquierdo o derecho")
+print("Depediendo de la gravedad del golpe o raspon elige el que ocupes, trabajo de pintura, cambio de llantas ")
+print("")
+print("3.Daño en la parte trasera(Incluye las dos puertas traseras)")
+print("Te recomendamos un cambio de pieza, un trabajo de pintura, un cambio de focos y cambio de llantas")
+print("")
+print("<-------------->")
+print("")
+
+print("Elige las reparaciones que ocupas")
 def menu():
     print("1.- Tipo de reparaciones")
     print("2.- Elegir reparaciones")
@@ -34,9 +48,9 @@ def reparacionesadicionales():
 
 
 #Lista de las reparaciones
-lista_de_reparaciones = ["Raspon ", "Abolladura leve ", "Abolladura grave", "Cambio de pieza ", "Llantas ", "Pintura  "]
+lista_de_reparaciones = ["Raspon ", "Abolladura leve ", "Abolladura grave", "Cambio de pieza ", "Llantas ", "Pintura  ", "Cambio de focos"]
 #Lista de los precios de reparacion
-lista_de_precio =    [900,      2400,         3500,      6500,   1500,      10000]
+lista_de_precio =    [900,      2400,         3500,      6500,   1500,      10000,      600]
 #Lista de las reparaciones actuales
 carrito_reparaciones = []
 #Lista de la cantidad de reparaciones
@@ -57,7 +71,7 @@ while opcion != 5:
         reparacionesadicionales()
     elif opcion == 3:
         listp1 = len(carrito_reparaciones)
-        print("---------- estimado -----------")
+        print("---------- Estimado -----------")
         print("Opcion     Tipo de reparacion      Precio($mx)       No. Reparaciones")
         for i in range(listp1):
             print(i+1,". ", lista_de_reparaciones[ carrito_reparaciones[i] ],"    ",lista_de_precio[ carrito_reparaciones[i] ], "   ", cantidad_reparaciones[i])
@@ -76,7 +90,9 @@ while opcion != 5:
         listp1 = len(carrito_reparaciones)
         for i in range(listp1):
             total = total + lista_de_precio[ carrito_reparaciones[i] ] * cantidad_reparaciones[i]
-        print("Su estimado ha llegado a un total de: ", total)
+        print(nombre, "tu estimado ha llegado a un total de: ", total)
+        print("")
+        print("Basado en las reparaciones que ingresaste para tu", inicio)
         print("")
         print(":)")
     elif opcion == 5:
